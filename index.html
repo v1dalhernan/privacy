@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Privacidad | Threedors</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #666666;
+      --card-bg: #f9f9fb;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #f0f6fc;
+        --muted: #8b949e;
+        --card-bg: #161b22;
+        --border: #30363d;
+        --accent: #58a6ff;
+        --accent-hover: #79c0ff;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 48px 24px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 36px;
+    }
+    .brand {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .app-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .app-card:hover {
+      border-color: var(--accent);
+    }
+    .app-card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+    }
+    .app-card p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+    .app-card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .app-card a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    footer a {
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">Threedors</div>
+      <h1>Centro de Privacidad</h1>
+      <p class="subtitle">Conoce las políticas de privacidad y protección de datos aplicables a nuestras aplicaciones móviles.</p>
+    </header>
+
+    <main>
+      <div class="app-card">
+        <h2>Schedule App</h2>
+        <p>Aplicación para la organización y gestión eficiente de horarios, calendarios y actividades personales.</p>
+        <a href="/schedule/">Ver Política de Privacidad &rarr;</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Threedors. Todos los derechos reservados.</p>
+      <p>Contacto de privacidad: <a href="mailto:privacy@threedors.com">privacy@threedors.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
