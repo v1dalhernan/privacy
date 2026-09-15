@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablora &mdash; Privacy Policy</title>
+  <title>Tablora &mdash; Privacy Policy &mdash; Threedors</title>
   <meta name="description" content="Privacy Policy for Tablora: Database Diagrams by Threedors / Jhonathan Vidal.">
   <link rel="icon" type="image/png" href="/assets/tablora-icon.png">
   <style>
@@ -40,7 +40,7 @@
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       font-size: 16px;
-      line-height: 1.7;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
       padding: 0 20px;
     }
@@ -48,30 +48,66 @@
     .container {
       max-width: 680px;
       margin: 0 auto;
-      padding: 48px 0 80px;
+      padding: 56px 0 80px;
     }
 
-    .nav-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+    header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand span {
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: 6px;
+    }
+
+    .contact-link {
       font-size: 0.9rem;
       color: var(--text-muted);
       text-decoration: none;
-      margin-bottom: 32px;
     }
 
-    .nav-back:hover {
+    .contact-link:hover {
       color: var(--text);
       text-decoration: underline;
     }
 
-    .doc-header {
+    .breadcrumb {
+      margin-bottom: 28px;
+    }
+
+    .breadcrumb a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .app-hero {
       display: flex;
       align-items: center;
-      gap: 16px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--border);
+      gap: 18px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
       margin-bottom: 36px;
     }
 
@@ -85,75 +121,76 @@
       background: #000000;
     }
 
-    h1 {
-      font-size: 1.75rem;
+    .app-hero h1 {
+      font-size: 1.35rem;
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1.25;
       margin-bottom: 4px;
     }
 
-    .meta {
+    .app-meta {
       font-size: 0.88rem;
       color: var(--text-muted);
     }
 
-    .intro-note {
-      font-size: 1.02rem;
-      color: var(--text);
-      margin-bottom: 32px;
-      padding: 16px 20px;
+    .callout-box {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      padding: 18px 20px;
       background: var(--surface);
-      border-left: 3px solid var(--text);
-      border-radius: 0 8px 8px 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 36px;
     }
 
-    h2 {
-      font-size: 1.2rem;
+    .callout-box strong {
+      color: var(--text);
+    }
+
+    .policy-section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      margin-bottom: 32px;
+    }
+
+    .policy-section h2 {
+      font-size: 1.18rem;
       font-weight: 600;
       letter-spacing: -0.01em;
-      margin-top: 36px;
       margin-bottom: 12px;
       color: var(--text);
     }
 
-    p {
-      margin-bottom: 16px;
+    .policy-section p {
+      font-size: 0.95rem;
       color: var(--text-muted);
+      margin-bottom: 14px;
     }
 
-    p strong, li strong {
+    .policy-section p strong,
+    .policy-section li strong {
       color: var(--text);
     }
 
-    ul {
-      margin-bottom: 20px;
-      padding-left: 22px;
+    .policy-section ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
     }
 
-    li {
-      margin-bottom: 8px;
+    .policy-section li {
+      font-size: 0.95rem;
       color: var(--text-muted);
+      margin-bottom: 8px;
     }
 
-    a {
+    a.inline-link {
       color: var(--link);
       text-decoration: underline;
     }
 
-    a:hover {
+    a.inline-link:hover {
       color: var(--link-hover);
-    }
-
-    .contact-box {
-      border-top: 1px solid var(--border);
-      padding-top: 28px;
-      margin-top: 44px;
-      margin-bottom: 44px;
-    }
-
-    .contact-box h2 {
-      margin-top: 0;
     }
 
     footer {
@@ -165,86 +202,109 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 12px;
+      margin-top: 56px;
     }
 
     footer a {
       color: var(--text-muted);
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: var(--text);
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <a href="/" class="nav-back">&larr; Back to all apps</a>
-
-    <header class="doc-header">
-      <img src="/assets/tablora-icon.png" alt="Tablora App Icon" class="app-icon">
-      <div>
-        <h1>Tablora: Database Diagrams</h1>
-        <div class="meta">Privacy Policy &bull; Last updated: September 15, 2026</div>
-      </div>
+    <header>
+      <a href="/" class="brand">threedors<span>/ privacy</span></a>
+      <a href="mailto:support@threedors.com" class="contact-link">support@threedors.com</a>
     </header>
 
+    <div class="breadcrumb">
+      <a href="/">&larr; Back to all apps</a>
+    </div>
+
     <main>
-      <div class="intro-note">
+      <div class="app-hero">
+        <img src="/assets/tablora-icon.png" alt="Tablora App Icon" class="app-icon">
+        <div>
+          <h1>Tablora: Database Diagrams</h1>
+          <div class="app-meta">Privacy Policy &bull; Last updated September 15, 2026</div>
+        </div>
+      </div>
+
+      <div class="callout-box">
         <strong>Tablora</strong> is a visual database modeling tool published by <strong>Threedors / Jhonathan Vidal</strong>. It is designed to work locally on your device without user accounts, analytics tracking, or proprietary server synchronization.
       </div>
 
-      <h2>1. Projects and Preferences</h2>
-      <p>
-        Tablora allows you to design database schemas. On Android, iOS, and macOS, your projects, tables, relationships, and preferences are saved exclusively within the local application storage of your device.
-      </p>
-      <ul>
-        <li>Tablora does not require an account or registration.</li>
-        <li>The application does not include proprietary sync servers, analytics frameworks, or advertising networks.</li>
-        <li>Local storage is managed by the operating system. System backups or restores depend on Android/iOS settings and the user&rsquo;s personal device backup configuration.</li>
-      </ul>
+      <section class="policy-section">
+        <h2>1. Projects and Preferences</h2>
+        <p>
+          Tablora allows you to design database schemas. On Android, iOS, and macOS, your projects, tables, relationships, and preferences are saved exclusively within the local application storage of your device.
+        </p>
+        <ul>
+          <li>Tablora does not require an account or user registration.</li>
+          <li>The application does not include proprietary sync servers, analytics frameworks, or advertising networks.</li>
+          <li>Local storage is managed by the operating system. System backups or restores depend on Android/iOS settings and the user&rsquo;s personal device backup configuration.</li>
+        </ul>
+      </section>
 
-      <h2>2. Optional In-App Purchases</h2>
-      <p>
-        Tablora includes optional one-time medal purchases to support ongoing development.
-      </p>
-      <ul>
-        <li>Google Play processes all purchases and restorations in accordance with its own terms and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</li>
-        <li>The app receives only the purchase confirmation and retains acquired medal identifiers locally. It never requests, accesses, or stores credit card numbers or financial information.</li>
-        <li>The diagram editor functions entirely offline; purchases and restoring transactions require connectivity to Google Play Services.</li>
-      </ul>
+      <section class="policy-section">
+        <h2>2. Optional In-App Purchases</h2>
+        <p>
+          Tablora includes optional one-time medal purchases to support ongoing development.
+        </p>
+        <ul>
+          <li>Google Play processes all purchases and restorations in accordance with its own terms and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="inline-link">Privacy Policy</a>.</li>
+          <li>The app receives only the purchase confirmation and retains acquired medal identifiers locally. It never requests, accesses, or stores credit card numbers or financial information.</li>
+          <li>The diagram editor functions entirely offline; purchasing and restoring transactions require connectivity to Google Play Services.</li>
+        </ul>
+      </section>
 
-      <h2>3. Files and Permissions</h2>
-      <p>
-        When you import or export diagrams:
-      </p>
-      <ul>
-        <li><strong>Importing:</strong> When importing a SQL or DBML file, Tablora parses the selected file locally on your device to generate the visual schema canvas. No file data is transmitted externally.</li>
-        <li><strong>Exporting:</strong> You can save diagrams as PNG images or export code, sharing them using your device&rsquo;s standard system share sheet. The chosen destination app handles the file according to its own policies.</li>
-        <li><strong>Permissions:</strong> On modern operating systems, Tablora uses native system pickers that do not require broad storage permissions. On legacy Android versions (API 29 or lower), saving an image may require scoped external storage write permission. Tablora never reads or accesses your photo library.</li>
-      </ul>
+      <section class="policy-section">
+        <h2>3. Files and Permissions</h2>
+        <p>
+          When you import or export diagrams:
+        </p>
+        <ul>
+          <li><strong>Importing:</strong> When importing a SQL or DBML file, Tablora parses the selected file locally on your device to generate the visual schema canvas. No file data is transmitted externally.</li>
+          <li><strong>Exporting:</strong> You can save diagrams as PNG images or export code, sharing them using your device&rsquo;s standard system share sheet. The chosen destination app handles the file according to its own policies.</li>
+          <li><strong>Permissions:</strong> On modern operating systems, Tablora uses native system pickers that do not require broad storage permissions. On legacy Android versions (API 29 or lower), saving an image may require scoped external storage write permission. Tablora never reads or accesses your photo library.</li>
+        </ul>
+      </section>
 
-      <h2>4. Data Retention and Deletion</h2>
-      <p>
-        You can delete diagrams directly from within the app, or remove all local application data through your operating system settings. Exported files remain in the folder or destination you selected until you delete them there.
-      </p>
-      <p>
-        Uninstalling Tablora deletes all local diagrams stored within the app. Medal purchases can be restored through Google Play upon reinstallation. For payment histories or refunds, use your Google Play account options.
-      </p>
+      <section class="policy-section">
+        <h2>4. Data Retention and Deletion</h2>
+        <p>
+          You can delete diagrams directly from within the app, or remove all local application data through your operating system settings. Exported files remain in the folder or destination you selected until you delete them there.
+        </p>
+        <p>
+          Uninstalling Tablora deletes all local diagrams stored within the app. Medal purchases can be restored through Google Play upon reinstallation. For payment histories or refunds, use your Google Play account options.
+        </p>
+      </section>
 
-      <h2>5. Changes to This Policy</h2>
-      <p>
-        We will update this policy and its revision date whenever data practices change.
-      </p>
+      <section class="policy-section">
+        <h2>5. Changes to This Policy</h2>
+        <p>
+          We will update this policy and its revision date whenever data handling practices change.
+        </p>
+      </section>
 
-      <section class="contact-box">
+      <section class="policy-section">
         <h2>Contact Us</h2>
         <p>
-          If you have questions regarding this policy or the application, please reach out to:
+          If you have questions regarding this policy or the application, please reach out directly to:
         </p>
-        <p><a href="mailto:support@threedors.com">support@threedors.com</a></p>
+        <p><a href="mailto:support@threedors.com" class="inline-link">support@threedors.com</a></p>
       </section>
     </main>
 
     <footer>
-      <span>&copy; 2026 Threedors / Jhonathan Vidal.</span>
-      <a href="/">Threedors Privacy Center</a>
+      <span>&copy; 2026 Threedors. Independent software by Jhonathan Vidal.</span>
+      <span>Direct inquiries: <a href="mailto:support@threedors.com">support@threedors.com</a></span>
     </footer>
   </div>
 
