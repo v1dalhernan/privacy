@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad - Tablora | Threedors</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #666666;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --box-bg: #f8fafc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #f0f6fc;
+        --muted: #8b949e;
+        --border: #30363d;
+        --accent: #58a6ff;
+        --accent-hover: #79c0ff;
+        --box-bg: #161b22;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      padding: 48px 24px;
+    }
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .meta-info {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background-color: var(--box-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-link">&larr; Volver al Centro de Privacidad</a>
+    
+    <h1>Política de Privacidad</h1>
+    <div class="meta-info">
+      <strong>Aplicación:</strong> Tablora: Database Diagrams &bull; <strong>Responsable:</strong> Threedors / Jhonathan Vidal &bull; <strong>Última actualización:</strong> 15 de septiembre de 2026
+    </div>
+
+    <div class="highlight-box">
+      <strong>Resumen:</strong> Tablora está pensada para proteger tu privacidad: funciona 100% de manera local y fuera de línea en tu dispositivo. No requiere cuenta de usuario, no incluye publicidad ni rastreo, y no envía tus esquemas de bases de datos a ningún servidor externo.
+    </div>
+
+    <h2>1. Proyectos y preferencias</h2>
+    <p>Tablora te permite diseñar y modelar esquemas de bases de datos. En Android guarda tus proyectos, tablas, relaciones y preferencias exclusivamente en el almacenamiento local de tu dispositivo.</p>
+    <ul>
+      <li>No requiere registro ni creación de cuenta propia de Tablora.</li>
+      <li>La aplicación no cuenta con servidor propio de sincronización ni incluye herramientas de analítica externa ni publicidad.</li>
+      <li>El almacenamiento local no incorpora cifrado adicional por parte de Tablora. Las copias de seguridad del sistema dependen de la configuración de tu sistema operativo y dispositivo.</li>
+    </ul>
+
+    <h2>2. Compras opcionales y apoyo al desarrollo</h2>
+    <p>Tablora incluye compras únicas opcionales de medallas para apoyar el desarrollo de la aplicación. Estas compras se gestionan de la siguiente manera:</p>
+    <ul>
+      <li><strong>Google Play Billing:</strong> Google Play procesa los pagos y las restauraciones de compras conforme a sus propios términos y <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">política de privacidad</a>.</li>
+      <li><strong>Datos financieros:</strong> Tablora nunca solicita, procesa ni almacena números de tarjeta de crédito, cuentas bancarias ni credenciales de pago. Todo es gestionado de forma segura por Google.</li>
+      <li>La app únicamente recibe el estado de la compra y conserva localmente los identificadores de las medallas adquiridas.</li>
+    </ul>
+
+    <h2>3. Archivos y permisos del dispositivo</h2>
+    <p>Para la gestión de tus diagramas y esquemas:</p>
+    <ul>
+      <li><strong>Importación:</strong> Al importar un archivo SQL o DBML, Tablora procesa el archivo seleccionado localmente para construir o actualizar el diagrama.</li>
+      <li><strong>Exportación y compartir:</strong> Puedes exportar imágenes (PNG) o código generado. Al compartirlos, los archivos se transfieren mediante el selector del sistema hacia la app o destino que tú elijas.</li>
+      <li><strong>Permisos de almacenamiento:</strong> En versiones antiguas de Android (API 29 o inferior), guardar una imagen en la galería puede requerir permiso de almacenamiento. En versiones modernas se emplean las APIs nativas del selector de archivos y galería del sistema. Tablora no lee tu biblioteca de fotos ni accede a archivos ajenos.</li>
+    </ul>
+
+    <h2>4. Conservación y eliminación de datos</h2>
+    <p>Tienes control total sobre tus datos:</p>
+    <ul>
+      <li>Puedes eliminar proyectos directamente desde la aplicación o borrar todos los datos locales desde los Ajustes de Android / iOS.</li>
+      <li>Los archivos que hayas exportado o guardado fuera de la app permanecen en la ubicación que elegiste hasta que decidas borrarlos manualmente.</li>
+      <li>Las medallas adquiridas pueden restaurarse a través de Google Play en cualquier momento. Para historial de transacciones o reembolsos, aplican los canales oficiales de Google Play.</li>
+    </ul>
+
+    <h2>5. Contacto y modificaciones</h2>
+    <p>Podemos actualizar esta Política de Privacidad para reflejar cambios en la aplicación o normativas legales. Si tienes cualquier consulta sobre esta política o el tratamiento de tus datos, puedes contactarnos en:</p>
+    <p><a href="mailto:support@threedors.com">support@threedors.com</a></p>
+
+    <footer>
+      <p>&copy; 2026 Threedors / Jhonathan Vidal. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
