@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablora &mdash; Support &mdash; Threedors</title>
+  <meta name="description" content="Help and contact for Tablora: Database Diagrams by JhovTech / Threedors.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="icon" type="image/png" href="/assets/tablora-icon.png">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #171717;
+      --text-muted: #737373;
+      --border: #e5e5e5;
+      --surface: #fafafa;
+      --link: #0969da;
+      --link-hover: #0550ae;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #ededed;
+        --text-muted: #a1a1a1;
+        --border: #262626;
+        --surface: #1a1a1a;
+        --link: #58a6ff;
+        --link-hover: #79c0ff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 0 80px;
+    }
+
+    header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand span {
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: 6px;
+    }
+
+    .contact-link {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .contact-link:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .breadcrumb {
+      margin-bottom: 28px;
+    }
+
+    .breadcrumb a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .app-hero {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 36px;
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      background: #000000;
+    }
+
+    .app-hero h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    .app-meta {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .callout-box {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      padding: 18px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 36px;
+    }
+
+    .callout-box strong {
+      color: var(--text);
+    }
+
+    .policy-section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      margin-bottom: 32px;
+    }
+
+    .policy-section h2 {
+      font-size: 1.18rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .policy-section p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .policy-section p strong,
+    .policy-section li strong {
+      color: var(--text);
+    }
+
+    .policy-section ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .policy-section li {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    a.inline-link {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    a.inline-link:hover {
+      color: var(--link-hover);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 56px;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <a href="/" class="brand">threedors<span>/ privacy</span></a>
+      <a href="mailto:support@threedors.com" class="contact-link">support@threedors.com</a>
+    </header>
+
+    <div class="breadcrumb">
+      <a href="/">&larr; Back to all apps</a>
+    </div>
+
+    <main>
+      <div class="app-hero">
+        <img src="/assets/tablora-icon.png" alt="Tablora App Icon" class="app-icon">
+        <div>
+          <h1>Tablora: Database Diagrams</h1>
+          <div class="app-meta">Support &bull; Last updated November 16, 2026</div>
+        </div>
+      </div>
+
+      <div class="callout-box">
+        Need help, found a bug or have an idea? Write to us at <a href="mailto:support@threedors.com?subject=Tablora" class="inline-link"><strong>support@threedors.com</strong></a>. You can write in any of the app&rsquo;s languages; we usually answer within a few days. You can also use <strong>Settings &rarr; Send feedback</strong> inside the app.
+      </div>
+
+      <section class="policy-section">
+        <h2>Import an existing schema</h2>
+        <p>
+          Tap <strong>Import SQL / DBML</strong> and paste your SQL script or DBML. Tablora creates a <strong>new diagram</strong> with its tables and relations; your other diagrams don&rsquo;t change. If the import fails, check the code and try again &mdash; the error tells you what couldn&rsquo;t be read.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Export your design</h2>
+        <ul>
+          <li><strong>Export diagram</strong> gives you SQL DDL, DBML or a <strong>PNG image</strong> (with a transparent, light, dark or current-theme background), ready to copy, share or save.</li>
+          <li>On iPhone and iPad, saving the image to Photos asks for permission to add photos. If you denied it, allow it again in <strong>Settings &rarr; Tablora &rarr; Photos</strong>.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section">
+        <h2>Where are my diagrams saved?</h2>
+        <p>
+          On your device only: changes are saved automatically and there is no account or cloud sync. To keep a portable, editable copy or move a diagram to another device, use <strong>Save as&hellip;</strong> to create a <strong>.dbd</strong> document, then open it on the other device with <strong>Import .dbd file</strong>.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Medals and purchases</h2>
+        <p>
+          Medals are optional one-time donations that support the app; every feature is free. If you reinstall the app or change device, open <strong>Support the app</strong> in Settings and tap <strong>Restore purchases</strong>, using the same Apple ID or Google account. Refunds are handled by the store: Apple (<a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" class="inline-link">reportaproblem.apple.com</a>) or Google Play.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Language</h2>
+        <p>
+          Tablora is available in eight languages. Change it in <strong>Settings &rarr; Language</strong>, or let it follow your system&rsquo;s language.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Delete your data</h2>
+        <p>
+          Delete a diagram from the app at any time (this can&rsquo;t be undone). Uninstalling Tablora deletes every diagram stored in it; files you exported stay wherever you saved them.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Privacy</h2>
+        <p>
+          Tablora has no ads, no accounts and no tracking, and your diagrams never leave your device unless you export them. Read the full <a href="/tablora/" class="inline-link">Privacy Policy</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2026 JhovTech / Threedors.</span>
+      <span>Direct inquiries: <a href="mailto:support@threedors.com">support@threedors.com</a></span>
+    </footer>
+  </div>
+
+</body>
+</html>
