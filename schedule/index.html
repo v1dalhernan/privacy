@@ -235,7 +235,7 @@
         <img src="/assets/schedule-icon.png" alt="School Schedule Icon" class="app-icon">
         <div>
           <h1>School Schedule app</h1>
-          <div class="app-meta">Privacy Policy &bull; Last updated September 26, 2026</div>
+          <div class="app-meta">Privacy Policy &bull; Last updated November 16, 2026</div>
         </div>
       </div>
 
@@ -250,22 +250,32 @@
         </p>
         <ul>
           <li>
-            <strong>Optional AI scanning:</strong> If you explicitly choose the &ldquo;With AI&rdquo; option in the schedule scan feature, the image of your schedule is sent to Google&rsquo;s Gemini API for optical character and timetable processing. This is strictly opt-in &mdash; the default &ldquo;On device&rdquo; option never transmits data. When using the AI option, Google&rsquo;s <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="inline-link">Privacy Policy</a> applies to that request.
+            <strong>Optional cloud sync:</strong> Sync is off until you turn it on in &ldquo;Backup &amp; sync&rdquo;. A copy of your app data (schedules, subjects, classes, tasks, grades, attendance, exams and app settings) is stored in <strong>your own cloud account</strong> so it can be synced between your devices. Task attachments are not synced. The data never passes through servers of ours, and we have no access to it.
+            <ul>
+              <li><strong>iPhone and iPad &mdash; iCloud:</strong> the copy is stored in the app&rsquo;s private space in your own iCloud account (CloudKit private database), together with a revision identifier, the data format version and the name of the operating system (&ldquo;ios&rdquo; or &ldquo;android&rdquo;) that last synced. No sign-in is needed beyond your device&rsquo;s iCloud account. Apple&rsquo;s <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer" class="inline-link">Privacy Policy</a> applies to data stored in iCloud.</li>
+              <li><strong>Android &mdash; Google Drive:</strong> the app signs in with Google and requests access only to a private app folder in your own Google Drive (the <em>drive.appdata</em> permission). The app cannot see any other file in your Drive. The email address of the connected account is stored only on your device to show which account is in use. Google&rsquo;s <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="inline-link">Privacy Policy</a> applies to data stored in Google Drive.</li>
+            </ul>
           </li>
           <li>
-            <strong>Optional Google Drive sync:</strong> If you choose to connect a Google account in &ldquo;Backup &amp; sync&rdquo;, the app signs in with Google and requests access only to a private app folder in <strong>your own Google Drive</strong> (the <em>drive.appdata</em> permission). A copy of your app data (schedules, subjects, classes, tasks, grades, attendance, exams and app settings) is stored there so it can be synced between your devices. Task attachments are not synced. The app cannot see any other file in your Drive, the data never passes through servers of ours, and we have no access to it. The email address of the connected account is stored only on your device to show which account is in use. Google&rsquo;s <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="inline-link">Privacy Policy</a> applies to data stored in Google Drive.
+            <strong>Schedule scanning:</strong> Scanning a schedule from the camera, a photo or a PDF is processed on your device. With &ldquo;Use my AI&rdquo;, the app opens your device&rsquo;s share sheet so you can send the image to an AI app of your choice; it goes only to the app you pick, under that app&rsquo;s own privacy policy, and we never receive it.
           </li>
           <li>
-            <strong>Backup files:</strong> You can export your data to a backup file. The file is created on your device and only leaves it if you choose to share or save it somewhere (for example by email, messaging or cloud storage).
+            <strong>Optional AI scanning (some earlier Android versions only):</strong> If you explicitly chose the &ldquo;With AI&rdquo; scan option, the image of your schedule was sent to Google&rsquo;s Gemini API to read the timetable. It was strictly opt-in, and Google&rsquo;s <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="inline-link">Privacy Policy</a> applied to that request. Current versions of the app do not include this option.
           </li>
           <li>
-            <strong>Optional donations:</strong> Supporting the app with a medal is processed entirely by Google Play Billing. We do not receive your payment details; the app only receives confirmation of which medal was purchased.
+            <strong>Reminders:</strong> Class, task and exam reminders are local notifications scheduled on your device. No data is sent anywhere to deliver them.
           </li>
           <li>
-            <strong>Rating prompt:</strong> The app may ask you, once, to rate it using Google Play&rsquo;s in-app review. To decide when to ask, it keeps simple usage counters (such as days of use) on your device only; they are never sent anywhere.
+            <strong>Backup files:</strong> You can export your data to a backup file. The file is created on your device and only leaves it if you choose to share or save it somewhere (for example by email, messaging, AirDrop or cloud storage).
           </li>
           <li>
-            <strong>Crash diagnostics:</strong> Google Play services may provide anonymous technical diagnostic information, such as system version and crash reports, to help us fix issues and improve application stability.
+            <strong>Optional donations:</strong> Supporting the app with a medal is processed entirely by Google Play Billing (Android) or the Apple App Store (iPhone and iPad). We do not receive your payment details; the app only receives confirmation of which medal was purchased.
+          </li>
+          <li>
+            <strong>Rating prompt:</strong> The app may ask you to rate it using Google Play&rsquo;s in-app review or Apple&rsquo;s App Store rating prompt. To decide when to ask, it keeps simple usage counters (such as days of use) on your device only; they are never sent anywhere.
+          </li>
+          <li>
+            <strong>Crash diagnostics:</strong> Google Play services (Android) may provide anonymous technical diagnostic information, such as system version and crash reports. On iPhone and iPad, Apple shares anonymous crash reports with developers only if you allow it in your device settings (&ldquo;Share With App Developers&rdquo;). We use them only to fix issues and improve stability.
           </li>
         </ul>
       </section>
@@ -280,14 +290,14 @@
       <section class="policy-section">
         <h2>3. Information Sharing</h2>
         <p>
-          We <strong>do not share personal or sensitive user information</strong> with any third parties. Data is only sent to Google when you explicitly use a Google feature described above (AI scanning, Google Drive sync or purchases), and only to perform that feature. If in the future data collection or sharing becomes necessary, we will request the user&rsquo;s explicit consent in compliance with applicable laws and regulations.
+          We <strong>do not share personal or sensitive user information</strong> with any third parties. Data is only sent to Google or Apple when you explicitly use one of their services described above (cloud sync, purchases or, in earlier Android versions, AI scanning), and only to perform that feature. If in the future data collection or sharing becomes necessary, we will request the user&rsquo;s explicit consent in compliance with applicable laws and regulations.
         </p>
       </section>
 
       <section class="policy-section">
         <h2>4. Data Security</h2>
         <p>
-          We apply reasonable technical and administrative measures to protect any data from unauthorized access, loss, or alteration. While we do not store personal user data on external servers, we follow industry best practices to ensure on-device security. Google Drive sync uses Google&rsquo;s encrypted connections (HTTPS) and your own Google account.
+          We apply reasonable technical and administrative measures to protect any data from unauthorized access, loss, or alteration. While we do not store personal user data on external servers, we follow industry best practices to ensure on-device security. Cloud sync uses the encrypted connections of iCloud or Google Drive and your own Apple or Google account.
         </p>
       </section>
 
@@ -297,7 +307,7 @@
           We do not store personal data on remote servers. All your timetable data resides locally within your device&rsquo;s private app storage. Uninstalling the application or clearing its storage through your device settings deletes all local data immediately.
         </p>
         <p>
-          If you enabled Google Drive sync, the synced copy stays in your Google Drive until you delete it. You can remove it at any time with &ldquo;Delete cloud data&rdquo; in the app&rsquo;s &ldquo;Backup &amp; sync&rdquo; screen, or from Google Drive (Settings &rarr; Manage apps &rarr; Schedule &rarr; Delete hidden app data). Disconnecting the account stops syncing and revokes the app&rsquo;s access.
+          If you enabled cloud sync, the synced copy stays in your iCloud or Google Drive until you delete it. You can remove it at any time with &ldquo;Delete cloud data&rdquo; in the app&rsquo;s &ldquo;Backup &amp; sync&rdquo; screen. On iPhone and iPad you can also remove it from your iCloud storage settings. On Android, you can also delete it from Google Drive (Settings &rarr; Manage apps &rarr; Schedule &rarr; Delete hidden app data), and disconnecting the account stops syncing and revokes the app&rsquo;s access.
         </p>
       </section>
 
@@ -314,6 +324,7 @@
           If you have any questions or concerns regarding this Privacy Policy, you can reach us directly at:
         </p>
         <p><a href="mailto:support@threedors.com" class="inline-link">support@threedors.com</a></p>
+        <p>For help using the app, see the <a href="/schedule/support/" class="inline-link">School Schedule support page</a>.</p>
       </section>
     </main>
 
