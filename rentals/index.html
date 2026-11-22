@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentals &mdash; Privacy Policy &mdash; Threedors</title>
+  <meta name="description" content="Privacy Policy for Rentals (Alquileres) by JhovTech / Threedors.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="icon" type="image/png" href="/assets/rentals-icon.png">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #171717;
+      --text-muted: #737373;
+      --border: #e5e5e5;
+      --surface: #fafafa;
+      --link: #0969da;
+      --link-hover: #0550ae;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #ededed;
+        --text-muted: #a1a1a1;
+        --border: #262626;
+        --surface: #1a1a1a;
+        --link: #58a6ff;
+        --link-hover: #79c0ff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 0 80px;
+    }
+
+    header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand span {
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: 6px;
+    }
+
+    .contact-link {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .contact-link:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .breadcrumb {
+      margin-bottom: 28px;
+    }
+
+    .breadcrumb a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .app-hero {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 36px;
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      background: #000000;
+    }
+
+    .app-hero h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    .app-meta {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .callout-box {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      padding: 18px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 36px;
+    }
+
+    .callout-box strong {
+      color: var(--text);
+    }
+
+    .policy-section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      margin-bottom: 32px;
+    }
+
+    .policy-section h2 {
+      font-size: 1.18rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .policy-section p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .policy-section p strong,
+    .policy-section li strong {
+      color: var(--text);
+    }
+
+    .policy-section ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .policy-section li {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    a.inline-link {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    a.inline-link:hover {
+      color: var(--link-hover);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 56px;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+    .lang-switch { font-size: 0.9rem; margin-bottom: 24px; color: var(--text-muted); }
+    .lang-switch a { color: var(--link); }
+    code { font-size: 0.88em; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 0 4px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <a href="/" class="brand">threedors<span>/ privacy</span></a>
+      <a href="mailto:support@threedors.com" class="contact-link">support@threedors.com</a>
+    </header>
+
+    <div class="breadcrumb">
+      <a href="/">&larr; Back to all apps</a>
+    </div>
+
+    <main>
+      <div class="app-hero">
+        <img src="/assets/rentals-icon.png" alt="Rentals app icon" class="app-icon">
+        <div>
+          <h1>Alquileres &middot; Rentals</h1>
+          <div class="app-meta">Política de privacidad &bull; Actualizada el 22 de noviembre de 2026<br>Privacy Policy &bull; Last updated November 22, 2026</div>
+        </div>
+      </div>
+      <p class="lang-switch">Español &middot; <a href="#en">English</a></p>
+<div id="es"></div>
+<div class="callout-box"><p>Alquileres (la "app") es una herramienta para llevar las cuentas de un negocio de alquiler, publicada por JhovTech y distribuida por Threedors. Esta política explica qué datos maneja la app y qué hace con ellos.</p></div>
+<section class="policy-section">
+<h2>Tus datos se quedan en tu teléfono</h2>
+<p>Lo que registras en la app (activos, arrendatarios, alquileres, cobros, pagos, mantenimientos, gastos, fotos, documentos con vencimiento y los datos de tu negocio) se guarda <strong>solo en tu teléfono</strong>. JhovTech no tiene servidores con esa información y no puede verla.</p>
+</section>
+<section class="policy-section">
+<h2>Respaldo en tu Google Drive (opcional)</h2>
+<p>Si activas el respaldo, la app guarda una copia de tus datos en <strong>tu propia cuenta de Google Drive</strong>, en una carpeta privada de la app que solo ella puede leer (permiso <code>drive.appdata</code>). La app no ve el resto de tus archivos de Drive. Puedes desconectar el respaldo cuando quieras desde Más → Respaldo, y borrar la copia desde la configuración de Google Drive.</p>
+</section>
+<section class="policy-section">
+<h2>Estadísticas de uso anónimas</h2>
+<p>La app usa Google Firebase Analytics para saber qué funciones se usan (por ejemplo, "se creó un activo" o "se compartió un recibo"). Estos eventos <strong>nunca</strong> incluyen montos, nombres, teléfonos, placas ni ningún dato que escribas. Firebase asigna un identificador anónimo a la instalación. La app no usa el identificador de publicidad ni muestra anuncios.</p>
+</section>
+<section class="policy-section">
+<h2>Configuración remota</h2>
+<p>La app consulta Firebase Remote Config para saber qué funciones están disponibles. No envía datos tuyos en esa consulta.</p>
+</section>
+<section class="policy-section">
+<h2>Compras</h2>
+<p>Las suscripciones a Premium se procesan con Google Play. JhovTech no recibe los datos de tu tarjeta ni de tu medio de pago; Google Play solo le informa a la app si tienes Premium.</p>
+</section>
+<section class="policy-section">
+<h2>Notificaciones y WhatsApp</h2>
+<p>Los avisos de cobros y mantenimientos se generan en tu teléfono. Cuando compartes un recibo o un recordatorio por WhatsApp, eres tú quien elige a quién enviarlo; la app no envía mensajes por su cuenta.</p>
+</section>
+<section class="policy-section">
+<h2>Bloqueo con huella o el bloqueo del teléfono (opcional)</h2>
+<p>Si activas el bloqueo de la app, el teléfono comprueba tu huella, tu rostro o tu PIN. La app solo recibe si la comprobación salió bien o no: nunca recibe ni guarda tu huella, tu rostro ni tu PIN.</p>
+</section>
+<section class="policy-section">
+<h2>Importar desde Excel o CSV</h2>
+<p>Cuando importas activos o arrendatarios, la app lee el archivo que eliges en tu teléfono. El archivo no se envía a ningún lado.</p>
+</section>
+<section class="policy-section">
+<h2>Enlace a la app en lo gratis</h2>
+<p>En la versión gratis, los recibos y recordatorios que compartes terminan con un enlace a la app en Google Play. El enlace solo dice si viene de un recibo o de un recordatorio (para contar instalaciones); no lleva datos tuyos ni de la persona que lo recibe.</p>
+</section>
+<section class="policy-section">
+<h2>Calificar la app</h2>
+<p>De vez en cuando la app puede mostrar la ventana de Google Play para calificarla. La maneja Google Play: la app no sabe qué calificación diste ni si la diste.</p>
+</section>
+<section class="policy-section">
+<h2>Lo que no hacemos</h2>
+<ul><li>No vendemos ni compartimos tus datos con terceros.</li><li>No mostramos publicidad.</li><li>No somos un servicio financiero.</li></ul>
+</section>
+<section class="policy-section">
+<h2>Borrar tus datos</h2>
+<p>Desinstalar la app borra todos los datos del teléfono. Si usaste el respaldo, puedes borrar la copia desde Google Drive (Configuración → Administrar apps → Alquileres → Borrar datos ocultos de la app).</p>
+</section>
+<section class="policy-section">
+<h2>Menores de edad</h2>
+<p>La app está dirigida a mayores de 18 años que administran un negocio.</p>
+</section>
+<section class="policy-section">
+<h2>Contacto</h2>
+<p>Si tienes preguntas sobre esta política, escribe a <a href="mailto:hello@threedors.com." class="inline-link">hello@threedors.com.</a></p>
+</section>
+      <p class="lang-switch" style="margin-top:56px"><a href="#es">Español</a> &middot; English</p>
+<div id="en"></div>
+<div class="callout-box"><p>Rentals (the "app") is a bookkeeping tool for rental businesses, published by JhovTech and distributed through Threedors. This policy explains what data the app handles and what it does with it.</p></div>
+<section class="policy-section">
+<h2>Your data stays on your phone</h2>
+<p>Everything you enter (assets, tenants, rentals, charges, payments, maintenance, expenses, photos, documents with expiry dates and your business details) is stored <strong>only on your phone</strong>. JhovTech has no servers holding that information and cannot see it.</p>
+</section>
+<section class="policy-section">
+<h2>Backup to your Google Drive (optional)</h2>
+<p>If you turn on backup, the app saves a copy of your data to <strong>your own Google Drive account</strong>, in a private app folder that only the app can read (<code>drive.appdata</code> permission). The app cannot see your other Drive files. You can disconnect backup anytime from More → Backup, and delete the copy from your Google Drive settings.</p>
+</section>
+<section class="policy-section">
+<h2>Anonymous usage statistics</h2>
+<p>The app uses Google Firebase Analytics to learn which features are used (for example, "an asset was created" or "a receipt was shared"). These events <strong>never</strong> include amounts, names, phone numbers, plates or anything you type. Firebase assigns an anonymous identifier to the installation. The app does not use the advertising ID and shows no ads.</p>
+</section>
+<section class="policy-section">
+<h2>Remote configuration</h2>
+<p>The app checks Firebase Remote Config to know which features are available. It sends none of your data in that request.</p>
+</section>
+<section class="policy-section">
+<h2>Purchases</h2>
+<p>Premium subscriptions are processed by Google Play. JhovTech does not receive your card or payment details; Google Play only tells the app whether you have Premium.</p>
+</section>
+<section class="policy-section">
+<h2>Notifications and WhatsApp</h2>
+<p>Payment and maintenance alerts are created on your phone. When you share a receipt or reminder on WhatsApp, you choose who receives it; the app never sends messages on its own.</p>
+</section>
+<section class="policy-section">
+<h2>Fingerprint or screen lock (optional)</h2>
+<p>If you turn on the app lock, your phone checks your fingerprint, face or PIN. The app only learns whether the check succeeded: it never receives or stores your fingerprint, face or PIN.</p>
+</section>
+<section class="policy-section">
+<h2>Importing from Excel or CSV</h2>
+<p>When you import assets or tenants, the app reads the file you pick on your phone. The file is not sent anywhere.</p>
+</section>
+<section class="policy-section">
+<h2>Link to the app in the free version</h2>
+<p>In the free version, receipts and reminders you share end with a link to the app on Google Play. The link only says whether it came from a receipt or a reminder (to count installs); it carries no data about you or the person who receives it.</p>
+</section>
+<section class="policy-section">
+<h2>Rating the app</h2>
+<p>From time to time the app may show Google Play's rating window. Google Play handles it: the app doesn't know whether you rated it or what rating you gave.</p>
+</section>
+<section class="policy-section">
+<h2>What we don't do</h2>
+<ul><li>We don't sell or share your data with third parties.</li><li>We don't show ads.</li><li>We are not a financial service.</li></ul>
+</section>
+<section class="policy-section">
+<h2>Deleting your data</h2>
+<p>Uninstalling the app deletes all data on the phone. If you used backup, you can delete the copy from Google Drive (Settings → Manage apps → Rentals → Delete hidden app data).</p>
+</section>
+<section class="policy-section">
+<h2>Children</h2>
+<p>The app is intended for adults (18+) who run a business.</p>
+</section>
+<section class="policy-section">
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:hello@threedors.com." class="inline-link">hello@threedors.com.</a></p>
+</section>
+      <p class="lang-switch" style="margin-top:40px"><a href="/rentals/terms/">Términos de uso &middot; Terms of Use</a></p>
+    </main>
+
+    <footer>
+      <span>&copy; 2026 JhovTech / Threedors.</span>
+      <span>Direct inquiries: <a href="mailto:support@threedors.com">support@threedors.com</a></span>
+    </footer>
+  </div>
+
+</body>
+</html>

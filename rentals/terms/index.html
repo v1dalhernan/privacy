@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentals &mdash; Terms of Use &mdash; Threedors</title>
+  <meta name="description" content="Terms of Use for Rentals (Alquileres) by JhovTech / Threedors.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="icon" type="image/png" href="/assets/rentals-icon.png">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #171717;
+      --text-muted: #737373;
+      --border: #e5e5e5;
+      --surface: #fafafa;
+      --link: #0969da;
+      --link-hover: #0550ae;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #ededed;
+        --text-muted: #a1a1a1;
+        --border: #262626;
+        --surface: #1a1a1a;
+        --link: #58a6ff;
+        --link-hover: #79c0ff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 0 80px;
+    }
+
+    header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand span {
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: 6px;
+    }
+
+    .contact-link {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .contact-link:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .breadcrumb {
+      margin-bottom: 28px;
+    }
+
+    .breadcrumb a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .app-hero {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 36px;
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      background: #000000;
+    }
+
+    .app-hero h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    .app-meta {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .callout-box {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      padding: 18px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 36px;
+    }
+
+    .callout-box strong {
+      color: var(--text);
+    }
+
+    .policy-section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      margin-bottom: 32px;
+    }
+
+    .policy-section h2 {
+      font-size: 1.18rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .policy-section p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .policy-section p strong,
+    .policy-section li strong {
+      color: var(--text);
+    }
+
+    .policy-section ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .policy-section li {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    a.inline-link {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    a.inline-link:hover {
+      color: var(--link-hover);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 56px;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+    .lang-switch { font-size: 0.9rem; margin-bottom: 24px; color: var(--text-muted); }
+    .lang-switch a { color: var(--link); }
+    code { font-size: 0.88em; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 0 4px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <a href="/" class="brand">threedors<span>/ privacy</span></a>
+      <a href="mailto:support@threedors.com" class="contact-link">support@threedors.com</a>
+    </header>
+
+    <div class="breadcrumb">
+      <a href="/">&larr; Back to all apps</a>
+    </div>
+
+    <main>
+      <div class="app-hero">
+        <img src="/assets/rentals-icon.png" alt="Rentals app icon" class="app-icon">
+        <div>
+          <h1>Alquileres &middot; Rentals</h1>
+          <div class="app-meta">Términos de uso &bull; Actualizados el 22 de noviembre de 2026<br>Terms of Use &bull; Last updated November 22, 2026</div>
+        </div>
+      </div>
+      <p class="lang-switch">Español &middot; <a href="#en">English</a></p>
+<div id="es"></div>
+<div class="callout-box"><p>Estos términos son el acuerdo entre tú y JhovTech, que publica la app y la distribuye por Threedors, sobre el uso de Alquileres (la "app"). Al usar la app los aceptas. Si no estás de acuerdo, no la uses.</p></div>
+<section class="policy-section">
+<h2>Qué es la app</h2>
+<p>Alquileres es una herramienta para llevar las cuentas de un negocio de alquiler de activos: cobros, pagos, mantenimientos, gastos y rentabilidad.</p>
+<ul><li><strong>No es un servicio financiero.</strong> La app no presta dinero, no cobra en tu nombre, no mueve dinero entre personas y no es un banco ni una pasarela de pagos. Los montos que ves son los que tú registras.</li><li><strong>No es asesoría</strong> contable, legal ni tributaria. Los reportes te ayudan a ordenar tus números; las decisiones y las declaraciones son tuyas.</li></ul>
+</section>
+<section class="policy-section">
+<h2>Tu cuenta y tus datos</h2>
+<ul><li>Para usar la app no necesitas crear una cuenta.</li><li>Lo que registras se guarda en tu teléfono (ver la política de privacidad). <strong>Eres responsable de respaldar tus datos.</strong> La app ofrece un respaldo en tu propio Google Drive; si no lo activas y pierdes o cambias el teléfono, JhovTech no puede recuperar tu información.</li><li>Los datos que registras son tuyos. JhovTech no los recibe ni los usa.</li></ul>
+</section>
+<section class="policy-section">
+<h2>Datos de otras personas</h2>
+<p>Al registrar a tus arrendatarios (nombre, teléfono, documentos, fotos) tú eres quien maneja esos datos. Úsalos solo para administrar tu alquiler y cumple las leyes de protección de datos de tu país. Los recordatorios y recibos los envías tú, desde tu WhatsApp u otra app, a quien tú eliges.</p>
+</section>
+<section class="policy-section">
+<h2>Premium</h2>
+<ul><li>Premium es una suscripción mensual o anual que se compra y se cobra <strong>por Google Play</strong>, con el medio de pago de tu cuenta de Google.</li><li><strong>Prueba gratis:</strong> si la oferta la incluye, la prueba dura 7 días. Si no cancelas antes de que termine, se cobra el plan que elegiste.</li><li><strong>Renovación:</strong> la suscripción se renueva sola al final de cada periodo hasta que la canceles.</li><li><strong>Cancelar:</strong> en Google Play → Pagos y suscripciones → Suscripciones. Conservas Premium hasta el final del periodo ya pagado.</li><li><strong>Reembolsos:</strong> siguen las políticas de Google Play.</li><li><strong>Cambios de precio:</strong> si el precio cambia, Google Play te avisa antes del cobro, con el plazo que fija para tu país, y puedes cancelar.</li><li>Si dejas de tener Premium, <strong>no pierdes tus datos</strong>: lo registrado sigue en la app y las funciones gratis siguen funcionando. Las de Premium (por ejemplo, más de 3 activos activos o el reporte PDF) quedan bloqueadas hasta que vuelvas a suscribirte.</li><li>Las funciones de cada plan pueden cambiar con las actualizaciones. No se quitará algo que ya pagaste durante el periodo en curso.</li></ul>
+</section>
+<section class="policy-section">
+<h2>Uso permitido</h2>
+<p>No uses la app para actividades ilegales, para cobrar intereses no permitidos por la ley de tu país, ni para acosar a nadie con los recordatorios. No intentes copiar, descompilar ni revender la app.</p>
+</section>
+<section class="policy-section">
+<h2>La app tal como está</h2>
+<p>Hacemos lo posible para que la app funcione bien y para que los cálculos sean correctos, pero se ofrece <strong>"tal como está"</strong>. Revisa los montos importantes antes de usarlos. En la medida que permita la ley, JhovTech no responde por pérdidas de datos, ganancias o negocio derivadas del uso de la app, ni por errores en lo que se registró. Si la ley no permite excluir esa responsabilidad, se limita a lo que pagaste por Premium en los últimos 12 meses.</p>
+</section>
+<section class="policy-section">
+<h2>Cambios a estos términos</h2>
+<p>Podemos actualizar estos términos. Si el cambio es importante, lo avisaremos en la app o en la ficha de Play antes de que aplique. Seguir usando la app después significa que aceptas la versión nueva.</p>
+</section>
+<section class="policy-section">
+<h2>Ley aplicable</h2>
+<p>Estos términos se rigen por las leyes de Panamá, sin perjuicio de los derechos que te dé la ley de tu país como consumidor.</p>
+</section>
+<section class="policy-section">
+<h2>Contacto</h2>
+<p>Escribe a <a href="mailto:hello@threedors.com." class="inline-link">hello@threedors.com.</a></p>
+</section>
+      <p class="lang-switch" style="margin-top:56px"><a href="#es">Español</a> &middot; English</p>
+<div id="en"></div>
+<div class="callout-box"><p>These terms are the agreement between you and JhovTech, which publishes the app and distributes it through Threedors, for the use of Rentals (the "app"). By using the app you accept them. If you don't agree, don't use it.</p></div>
+<section class="policy-section">
+<h2>What the app is</h2>
+<p>Rentals is a bookkeeping tool for asset rental businesses: charges, payments, maintenance, costs and profitability.</p>
+<ul><li><strong>It is not a financial service.</strong> The app does not lend money, collect payments on your behalf, move money between people, or act as a bank or payment gateway. The amounts you see are the ones you enter.</li><li><strong>It is not</strong> accounting, legal or tax <strong>advice</strong>. Reports help you organize your numbers; decisions and filings are yours.</li></ul>
+</section>
+<section class="policy-section">
+<h2>Your account and your data</h2>
+<ul><li>You don't need an account to use the app.</li><li>What you enter is stored on your phone (see the privacy policy). <strong>You are responsible for backing up your data.</strong> The app offers a backup to your own Google Drive; if you don't turn it on and you lose or change phones, JhovTech cannot recover your information.</li><li>The data you enter is yours. JhovTech does not receive or use it.</li></ul>
+</section>
+<section class="policy-section">
+<h2>Other people's data</h2>
+<p>When you record your tenants (name, phone, documents, photos), you are the one handling that data. Use it only to manage your rentals and follow the data protection laws of your country. Reminders and receipts are sent by you, from your WhatsApp or another app, to whoever you choose.</p>
+</section>
+<section class="policy-section">
+<h2>Premium</h2>
+<ul><li>Premium is a monthly or yearly subscription bought and billed <strong>through Google Play</strong>, with your Google account's payment method.</li><li><strong>Free trial:</strong> when the offer includes one, it lasts 7 days. If you don't cancel before it ends, the plan you chose is charged.</li><li><strong>Renewal:</strong> the subscription renews automatically at the end of each period until you cancel.</li><li><strong>Cancel:</strong> Google Play → Payments &amp; subscriptions → Subscriptions. You keep Premium until the end of the period already paid.</li><li><strong>Refunds:</strong> follow Google Play's policies.</li><li><strong>Price changes:</strong> if the price changes, Google Play notifies you before the charge, with the notice period set for your country, and you can cancel.</li><li>If you stop having Premium, <strong>you don't lose your data</strong>: what you recorded stays in the app and free features keep working. Premium features (for example, more than 3 active assets or the PDF report) are locked until you subscribe again.</li><li>Features in each plan may change with updates. Nothing you already paid for will be removed during the current period.</li></ul>
+</section>
+<section class="policy-section">
+<h2>Acceptable use</h2>
+<p>Don't use the app for illegal activities, to charge interest not allowed by your country's law, or to harass anyone with reminders. Don't try to copy, decompile or resell the app.</p>
+</section>
+<section class="policy-section">
+<h2>The app as it is</h2>
+<p>We do our best for the app to work well and for calculations to be right, but it is provided <strong>"as is"</strong>. Check important amounts before relying on them. To the extent permitted by law, JhovTech is not liable for loss of data, profits or business arising from the use of the app, or for errors in what was entered. Where the law does not allow excluding that liability, it is limited to what you paid for Premium in the last 12 months.</p>
+</section>
+<section class="policy-section">
+<h2>Changes to these terms</h2>
+<p>We may update these terms. If a change is significant, we'll announce it in the app or on the Play listing before it applies. Continuing to use the app afterwards means you accept the new version.</p>
+</section>
+<section class="policy-section">
+<h2>Governing law</h2>
+<p>These terms are governed by the laws of Panama, without prejudice to the rights your country's consumer law gives you.</p>
+</section>
+<section class="policy-section">
+<h2>Contact</h2>
+<p>Write to <a href="mailto:hello@threedors.com." class="inline-link">hello@threedors.com.</a></p>
+</section>
+      <p class="lang-switch" style="margin-top:40px"><a href="/rentals/">Política de privacidad &middot; Privacy Policy</a></p>
+    </main>
+
+    <footer>
+      <span>&copy; 2026 JhovTech / Threedors.</span>
+      <span>Direct inquiries: <a href="mailto:support@threedors.com">support@threedors.com</a></span>
+    </footer>
+  </div>
+
+</body>
+</html>
